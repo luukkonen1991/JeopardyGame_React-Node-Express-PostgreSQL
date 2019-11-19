@@ -9,6 +9,19 @@ const conopts = {
 
 const pool = new Pool(conopts);
 
+function getAllData(callback) {
+  pool.connect((err, client) => {
+    if (err) throw err;
+    client.query("SELECT * FROM category LEFT JOIN question ON category.id = question.id LEFT JOIN options ON question.id = options.id",
+    (err, data) => {
+      if (err) throw err;
+      client.release();
+      callback(data.rows);
+    });
+  });
+}
+
+
 function getAllAnimalQuestions(callback) {
   pool.connect((err, client) => {
     if (err) throw err;
@@ -45,4 +58,6 @@ function getAllScienceQuestions(callback) {
   });
 }
 
-module.exports = { getAllAnimalQuestions, getAllHistoryQuestions, getAllScienceQuestions };
+
+
+module.exports = { getAllData, getAllAnimalQuestions, getAllHistoryQuestions, getAllScienceQuestions };
