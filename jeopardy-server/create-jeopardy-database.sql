@@ -13,8 +13,12 @@ CREATE TABLE question (
 
 CREATE TABLE options (
   id SERIAL PRIMARY KEY,
-  title varchar(255) NOT NULL,
-  result boolean,
+  title1 varchar(255) NOT NULL,
+  result1 boolean,
+  title2 varchar(255) NOT NULL,
+  result2 boolean,
+  title3 varchar(255) NOT NULL,
+  result3 boolean,
   question INT
 );
 
@@ -26,10 +30,11 @@ CREATE TABLE category (
 );
 
 
+INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('eka', 'toka', 'kolmas', true, false, false);
 
-INSERT INTO options (title, result) VALUES ('Eka vaihtoehto', false);
-INSERT INTO options (title, result) VALUES ('Toka vaihtoehto', true);
-INSERT INTO options (title, result) VALUES ('Kolmas vaihtoehto', false);
+-- INSERT INTO options (title1, result1) VALUES ('Eka vaihtoehto', false);
+-- INSERT INTO options (title2, result2) VALUES ('Toka vaihtoehto', true);
+-- INSERT INTO options (title3, result3) VALUES ('Kolmas vaihtoehto', false);
 
 INSERT INTO question (title, difficulty) VALUES ('Otsikko', 'Vaikea');
 
