@@ -29,22 +29,21 @@ CREATE TABLE category (
   summary varchar(255) NOT NULL
 );
 
-
+INSERT INTO category (title, summary) VALUES ('Elaimet', 'category-kuvuas');
+INSERT INTO question (title, difficulty) VALUES ('Otsikko', 'Vaikea');
 INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('eka', 'toka', 'kolmas', true, false, false);
 
--- INSERT INTO options (title1, result1) VALUES ('Eka vaihtoehto', false);
--- INSERT INTO options (title2, result2) VALUES ('Toka vaihtoehto', true);
--- INSERT INTO options (title3, result3) VALUES ('Kolmas vaihtoehto', false);
-
-INSERT INTO question (title, difficulty) VALUES ('Otsikko', 'Vaikea');
+INSERT INTO category (title, summary) VALUES ('Elaimet', 'category-kuvuas');
+INSERT INTO question (title, difficulty) VALUES ('Otsikko2', 'helppo');
+INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('eka', 'toka', 'kolmas', false, true, false);
 
 INSERT INTO category (title, summary) VALUES ('Elaimet', 'category-kuvuas');
-
+INSERT INTO question (title, difficulty) VALUES ('Otsikko3', 'normaali');
+INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('eka', 'toka', 'kolmas', false, true, false);
 
 
 
 ALTER TABLE question add CONSTRAINT fk_category FOREIGN KEY(category) REFERENCES category(id);
-
 ALTER TABLE options add CONSTRAINT fk_question FOREIGN KEY(question) REFERENCES question(id);
 
 
