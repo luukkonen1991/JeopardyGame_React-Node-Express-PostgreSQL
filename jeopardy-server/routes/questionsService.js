@@ -25,7 +25,7 @@ function getAllData(callback) {
 function getAllAnimalQuestions(callback) {
   pool.connect((err, client) => {
     if (err) throw err;
-    client.query("SELECT category.title, question.title, question.difficulty FROM category JOIN question ON category.id = question.id AND category.title = 'Elaimet'",
+    client.query("SELECT * FROM category LEFT JOIN question ON category.id = question.id LEFT JOIN options ON question.id = options.id WHERE category.ctitle = 'Elaimet'",
     (err, data) => {
       if (err) throw err;
       client.release();
@@ -37,7 +37,7 @@ function getAllAnimalQuestions(callback) {
 function getAllHistoryQuestions(callback) {
   pool.connect((err, client) => {
     if (err) throw err;
-    client.query("SELECT category.title, question.title, question.difficulty FROM category JOIN question ON category.id = question.id AND category.title = 'Historia'",
+    client.query("SELECT * FROM category LEFT JOIN question ON category.id = question.id LEFT JOIN options ON question.id = options.id WHERE category.ctitle = 'Historia'",
     (err, data) => {
       if (err) throw err;
       client.release();
@@ -49,7 +49,7 @@ function getAllHistoryQuestions(callback) {
 function getAllScienceQuestions(callback) {
   pool.connect((err, client) => {
     if (err) throw err;
-    client.query("SELECT category.title, question.title, question.difficulty FROM category JOIN question ON category.id = question.id AND category.title = 'Tiede'",
+    client.query("SELECT * FROM category LEFT JOIN question ON category.id = question.id LEFT JOIN options ON question.id = options.id WHERE category.ctitle = 'Tiede'",
     (err, data) => {
       if (err) throw err;
       client.release();

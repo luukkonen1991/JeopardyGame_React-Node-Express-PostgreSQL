@@ -25,7 +25,6 @@ class QuestionCard extends Component {
       naytettavaKomponentti = <div>
         <h3>Category: {ctitle}</h3>
         <p>Difficulty {difficulty}</p>
-        <OptionCard data={this.props.question} />
       </div>
     }
     return (
