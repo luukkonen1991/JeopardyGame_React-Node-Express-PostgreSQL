@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { ClientRequest } from 'http';
+import AnimalQuestionItem from './AnimalQuestionItem';
+import './AnimalQuestions.css';
 
 class AnimalQuestions extends Component {
 
@@ -17,14 +18,14 @@ class AnimalQuestions extends Component {
     }
 
     render() {
-        const animalQuestionItems = this.state.animalQuestions
+        const animalItem = this.state.animalQuestions
         .map((question) =>{
-            return <animalQuestionItems data = {question}/>
+            return <AnimalQuestionItem data = {question}/>
         } )
 
         return (
-            <div>
-                {animalQuestionItems}
+            <div class="MainDiv">
+                {animalItem}
                 
             </div>
         );
