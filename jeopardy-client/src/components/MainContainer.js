@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import AnimalQuestions from './AnimalQuestions';
 import './AnimalQuestions.css';
+import NavBar from './NavBar';
+import ScienceQuestions from './ScienceQuestions';
 
 
 class MainContainer extends Component {
     render() {
         return (
             <div>
-
-                
-                    <AnimalQuestions />
-               
-
-
+                <NavBar />
+                <AnimalQuestions />
+                <ScienceQuestions />
             </div>
         );
     }

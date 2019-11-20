@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
+import './ScienceQuestions.css';
+import ScienceQuestionItem from './ScienceQuestionItem';
+
+
 
 class ScienceQuestions extends Component {
+
+    state = {
+        scienceQuestions: []
+    }
+
     componentDidMount(){
         fetch("api/questions/tiede")
         .then(res => res.json())
@@ -9,13 +18,13 @@ class ScienceQuestions extends Component {
         .catch(()=> this.setState({hasErrors: true}));
     }
     render() {
-        const scienceQuestionItems = this.state.scienceQuestions
+        const scienceItem = this.state.scienceQuestions
         .map((question) =>{
-            return <scienceQuestionItems data = {question}/>
+            return <ScienceQuestionItem data = {question}/>
         } )
         return (
-            <div>
-                
+            <div className="MainDiv">
+                {scienceItem}
             </div>
         );
     }
