@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import AnimalQuestions from './AnimalQuestions';
 import './AnimalQuestions.css';
+import HistoryQuestions from './HistoryQuestions';
+import './HistoryQuestions.css';
 
 
 class MainContainer extends Component {
@@ -10,6 +12,7 @@ class MainContainer extends Component {
 
                 
                     <AnimalQuestions />
+                    <HistoryQuestions />
                
 
 

@@ -26,7 +26,6 @@ class AnimalQuestions extends Component {
         return (
             <div class="MainDiv">
                 {animalItem}
-                
             </div>
         );
     }
