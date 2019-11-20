@@ -1,0 +1,14 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 8vh;
+  background-color: aquamarine;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  font-size: 2em;
+  text-decoration: underline;
+}
