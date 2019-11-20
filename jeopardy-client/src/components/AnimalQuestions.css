@@ -1,0 +1,7 @@
+.MainDiv {
+    display:flex;
+    flex-direction: column;
+    width: 33%;
+    float: right;
+    height: 100vh;
+}
