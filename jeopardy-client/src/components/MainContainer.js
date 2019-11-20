@@ -10,8 +10,8 @@ class MainContainer extends Component {
         return (
             <div>
                 <NavBar />
-                <AnimalQuestions />
                 <ScienceQuestions />
+                <AnimalQuestions />
             </div>
         );
     }
