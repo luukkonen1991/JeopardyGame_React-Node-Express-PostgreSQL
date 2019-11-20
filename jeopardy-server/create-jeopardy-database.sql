@@ -32,42 +32,42 @@ CREATE TABLE category (
 
 -- Animal table content
 INSERT INTO category (ctitle, summary) VALUES ('Elaimet', 'elaimet-kuvuas');
-INSERT INTO question (title, difficulty) VALUES ('Otsikko', 'Vaikea');
+INSERT INTO question (title, difficulty) VALUES ('OtsikkoElaimet', 'Vaikea');
 INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('eka', 'toka', 'kolmas', true, false, false);
 
 INSERT INTO category (ctitle, summary) VALUES ('Elaimet', 'elaimet-kuvuas');
-INSERT INTO question (title, difficulty) VALUES ('Otsikko2', 'helppo');
+INSERT INTO question (title, difficulty) VALUES ('Otsikko2Elaimet', 'helppo');
 INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('eka', 'toka', 'kolmas', false, true, false);
 
 INSERT INTO category (ctitle, summary) VALUES ('Elaimet', 'elaimet-kuvuas');
-INSERT INTO question (title, difficulty) VALUES ('Otsikko3', 'normaali');
+INSERT INTO question (title, difficulty) VALUES ('Otsikko3Elaimet', 'normaali');
 INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('eka', 'toka', 'kolmas', false, true, false);
 
 
 -- History talbe content
 INSERT INTO category (ctitle, summary) VALUES ('Historia', 'historia-kuvuas');
-INSERT INTO question (title, difficulty) VALUES ('Otsikko1', 'normaali');
+INSERT INTO question (title, difficulty) VALUES ('Otsikko1Histori', 'normaali');
 INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('eka', 'toka', 'kolmas', false, true, false);
 
 INSERT INTO category (ctitle, summary) VALUES ('Historia', 'historia-kuvuas');
-INSERT INTO question (title, difficulty) VALUES ('Otsikko2', 'vaikea');
+INSERT INTO question (title, difficulty) VALUES ('Otsikko2Historia', 'vaikea');
 INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('eka', 'toka', 'kolmas', false, true, false);
 
 INSERT INTO category (ctitle, summary) VALUES ('Historia', 'historia-kuvuas');
-INSERT INTO question (title, difficulty) VALUES ('Otsikko3', 'helppo');
+INSERT INTO question (title, difficulty) VALUES ('Otsikko3Historia', 'helppo');
 INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('eka', 'toka', 'kolmas', false, true, false);
 
 -- Science table content 
 INSERT INTO category (ctitle, summary) VALUES ('Tiede', 'tiede-kuvuas');
-INSERT INTO question (title, difficulty) VALUES ('Otsikko1', 'normaali');
+INSERT INTO question (title, difficulty) VALUES ('Otsikko1Historia', 'normaali');
 INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('eka', 'toka', 'kolmas', false, true, false);
 
 INSERT INTO category (ctitle, summary) VALUES ('Tiede', 'tiede-kuvuas');
-INSERT INTO question (title, difficulty) VALUES ('Otsikko2', 'vaikea');
+INSERT INTO question (title, difficulty) VALUES ('Otsikko2Historia', 'vaikea');
 INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('eka', 'toka', 'kolmas', false, true, false);
 
 INSERT INTO category (ctitle, summary) VALUES ('Tiede', 'tiede-kuvuas');
-INSERT INTO question (title, difficulty) VALUES ('Otsikko3', 'helppo');
+INSERT INTO question (title, difficulty) VALUES ('Otsikko3Historia', 'helppo');
 INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('eka', 'toka', 'kolmas', false, true, false);
 
 
