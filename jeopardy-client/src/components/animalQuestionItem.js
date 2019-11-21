@@ -9,6 +9,8 @@ class AnimalQuestionItem extends Component {
             <div className="ItemCard" id={id}>
                 <h3>{title}</h3>
                 <p>{difficulty}</p>
+                
+
             </div>
         );
     }
