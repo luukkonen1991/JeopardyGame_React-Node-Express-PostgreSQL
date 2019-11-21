@@ -4,11 +4,14 @@ import './NavBar.css';
 class NavBar extends Component {
   render() {
     return (
-      <ul>
-        <li>Tiede</li>
-        <li>Historia</li>
-        <li>Eläimet</li>
-      </ul>
+      <div>
+       
+        <ul>
+          <li>Tiede</li>
+          <li>Historia</li>
+          <li>Eläimet</li>
+        </ul>
+      </div>
     );
   }
 }
