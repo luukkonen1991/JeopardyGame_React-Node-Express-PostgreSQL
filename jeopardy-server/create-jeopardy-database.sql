@@ -58,6 +58,7 @@ INSERT INTO question (title, difficulty) VALUES ('What belongs solely to the Dev
 INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('The Sprint Backlog', 'The Product Backlog', 'The Increment', true, false, false);
 
 -- Science table content 
+<<<<<<< HEAD
 INSERT INTO category (ctitle, summary) VALUES ('Tiede', 'tiede-kuvaus');
 INSERT INTO question (title, difficulty) VALUES ('How can you access the state of a component from inside of a member function?', 'normaali');
 INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('this.values', 'this.getState()', 'this.state', true, false, false);
@@ -69,6 +70,19 @@ INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES (
 INSERT INTO category (ctitle, summary) VALUES ('Tiede', 'tiede-kuvaus');
 INSERT INTO question (title, difficulty) VALUES ('Which of the following API is a MUST for every ReactJS component?', 'helppo');
 INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('getInitialState', 'render', 'renderComponent', false, false, true);
+=======
+INSERT INTO category (ctitle, summary) VALUES ('Tiede', 'tiede-kuvuas');
+INSERT INTO question (title, difficulty) VALUES ('Otsikko1Tiede', 'normaali');
+INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('eka', 'toka', 'kolmas', false, true, false);
+
+INSERT INTO category (ctitle, summary) VALUES ('Tiede', 'tiede-kuvuas');
+INSERT INTO question (title, difficulty) VALUES ('Otsikko2Tiede', 'vaikea');
+INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('eka', 'toka', 'kolmas', false, true, false);
+
+INSERT INTO category (ctitle, summary) VALUES ('Tiede', 'tiede-kuvuas');
+INSERT INTO question (title, difficulty) VALUES ('Otsikko3Tiede', 'helppo');
+INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('eka', 'toka', 'kolmas', false, true, false);
+>>>>>>> 69fdddc78da63d03f1a845cf400acdc294482a22
 
 
 
