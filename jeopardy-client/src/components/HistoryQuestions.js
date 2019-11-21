@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import HistoryQuestionItem from './HistoryQuestionItem';
+import './HistoryQuestions.css';
 
 class HistoryQuestions extends Component {
+
     state = {
         historyQuestions: []
 
@@ -16,13 +19,13 @@ class HistoryQuestions extends Component {
 
     
     render() {
-        const historyQuestionItems = this.state.historyQuestions
+        const historyItem = this.state.historyQuestions
         .map((question) =>{
-            return <historyQuestionItems data = {question}/>
+            return <HistoryQuestionItem data = {question}/>
         } )
         return (
-            <div>
-                 {historyQuestionItems}
+            <div className="MainDiv">
+                 {historyItem}
             </div>
         );
     }
