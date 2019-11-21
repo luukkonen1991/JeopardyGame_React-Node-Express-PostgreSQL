@@ -7,9 +7,9 @@ class NavBar extends Component {
       <div>
        
         <ul>
-          <li>Tiede</li>
-          <li>Historia</li>
-          <li>Eläimet</li>
+          <li>React</li>
+          <li>Scrum</li>
+          <li>Git</li>
         </ul>
       </div>
     );

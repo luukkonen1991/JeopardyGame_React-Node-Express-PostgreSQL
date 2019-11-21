@@ -8,8 +8,9 @@
 }
 
 .Back {
-    
-   min-height: 207px
-    
+   min-height: 300px;
 }
 
+.Front {
+    min-height: 300px;
+}

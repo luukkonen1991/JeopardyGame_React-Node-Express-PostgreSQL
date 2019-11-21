@@ -8,7 +8,7 @@
 
 .Back {
     
-    min-height: 207px;
+    min-height: 300px;
      margin: 10px;
      border: 5px green;
      border-style: outset;
@@ -18,7 +18,7 @@
  .Front {
 
     border-style: inset;
-    min-height: 207px;
+    min-height: 300px;
      margin: 10px;
      border: 5px solid green;
  }
