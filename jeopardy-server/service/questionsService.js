@@ -29,7 +29,7 @@ function getAllAnimalQuestions(callback) {
     (err, data) => {
       if (err) throw err;
       client.release();
-      callback(err, data.rows);
+      callback(data.rows);
     });
   });
 }
@@ -41,7 +41,7 @@ function getAllHistoryQuestions(callback) {
     (err, data) => {
       if (err) throw err;
       client.release();
-      callback(err, data.rows);
+      callback(data.rows);
     });
   });
 }
@@ -53,7 +53,7 @@ function getAllScienceQuestions(callback) {
     (err, data) => {
       if (err) throw err;
       client.release();
-      callback(err, data.rows);
+      callback(data.rows);
     });
   });
 }
