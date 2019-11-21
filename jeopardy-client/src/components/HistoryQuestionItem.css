@@ -1,0 +1,27 @@
+.MainDiv {
+    display:flex;
+    flex-direction: column;
+    width: 33%;
+    float: right;
+    height: 100vh;
+}
+
+.Back {
+    
+    min-height: 207px;
+     margin: 10px;
+     border: 5px green;
+     border-style: outset;
+
+ }
+
+ .Front {
+
+    border-style: inset;
+    min-height: 207px;
+     margin: 10px;
+     border: 5px solid green;
+ }
+
+
+ 

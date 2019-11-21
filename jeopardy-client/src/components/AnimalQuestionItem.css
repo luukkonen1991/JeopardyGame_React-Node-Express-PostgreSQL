@@ -1,7 +1,15 @@
-.ItemCard {
-    border: 1px solid black;
-    background-color: aqua;
-    border-radius: 10px; 
-    width: 100%;
-    height: 33%;
+.MainDiv {
+    display:flex;
+    flex-direction: column;
+    width: 33%;
+    float: right;
+    height: 90vh;
+    
 }
+
+.Back {
+    
+   min-height: 207px
+    
+}
+

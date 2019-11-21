@@ -36,6 +36,7 @@ class ScienceQuestionItem extends Component {
         return (
             <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal">
                 <div className="Front" id={id}>
+                    
                     <h1>{title}</h1>
                     <p>{title1} <button onClick={this.handleClick}>Valitse</button></p>
                     <p>{title2} <button onClick={this.handleClick}>Valitse</button></p>
