@@ -1,4 +1,4 @@
-.MainDiv {
+/* .MainDiv {
     display:flex;
     flex-direction: column;
     width: 33%;
@@ -7,21 +7,18 @@
 }
 
 .Back {
-    
-    min-height: 300px;
-     margin: 10px;
-     border: 5px green;
-     border-style: outset;
-
+    min-height: 350px;
+    margin: 10px;
+    border: 5px green;
+    border-style: outset;
  }
 
  .Front {
-
     border-style: inset;
-    min-height: 300px;
-     margin: 10px;
-     border: 5px solid green;
+    min-height: 350px;
+    margin: 10px;
+    border: 5px solid green;
  }
 
 
- 
+  */

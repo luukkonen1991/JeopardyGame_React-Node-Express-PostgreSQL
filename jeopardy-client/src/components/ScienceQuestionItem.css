@@ -2,14 +2,15 @@
   display:flex;
   flex-direction: column;
   width: 33%;
-  float: left;
   height: 89vh;
 }
 
 .Back {
-  min-height: 300px
+  min-height: 350px;
+  border-radius: 15px;
 }
 
 .Front {
-  min-height: 300px;
+  min-height: 350px;
+  border-radius: 15px;
 }
