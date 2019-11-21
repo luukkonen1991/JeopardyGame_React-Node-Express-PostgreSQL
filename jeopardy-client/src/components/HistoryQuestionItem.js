@@ -32,7 +32,7 @@ class HistoryQuestionItem extends Component {
 
         return (
             <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal">
-                <div className="Front" id={id}>
+                <div className="Front2" id={id}>
                     <h3>{title}</h3>
                     <p>{title1} <button onClick={this.handleClick}>Valitse</button></p>
                     <p>{title2} <button onClick={this.handleClick}>Valitse</button></p>

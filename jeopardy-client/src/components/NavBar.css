@@ -3,13 +3,18 @@ ul {
   flex-direction: row;
   justify-content: space-around;
   height: 8vh;
-  background-color: aquamarine;
+  background-image: url("https://images.pexels.com/photos/1252890/pexels-photo-1252890.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   margin: 0;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 li {
   list-style-type: none;
   font-size: 2em;
-  text-decoration: underline;
+  text-decoration: bold;
 }
+
 

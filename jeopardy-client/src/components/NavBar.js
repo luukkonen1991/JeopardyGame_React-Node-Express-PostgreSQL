@@ -5,11 +5,10 @@ class NavBar extends Component {
   render() {
     return (
       <div>
-       
         <ul>
-          <li>React</li>
-          <li>Scrum</li>
-          <li>Git</li>
+          <li>REACT</li>
+          <li>SCRUM</li>
+          <li>GIT</li>
         </ul>
       </div>
     );
