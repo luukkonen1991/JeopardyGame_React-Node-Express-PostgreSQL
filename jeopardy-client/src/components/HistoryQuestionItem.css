@@ -7,31 +7,31 @@
 }
 
 .Back {
-        min-height: 300px;
+        min-height: 320px;
+        max-height: 320px;
         background-size: 300px;
         background-repeat: no-repeat;
         background-position: center;
         background-color: rgba(255, 255, 255, 0.9);
         background-blend-mode: lighten;
         border-style: inset;
-        min-height: 300px;
-        margin: 30px;
+        /* margin: 30px; */
         border-radius: 40px;
       }
       
  .Front2 {
-    min-height: 300px;
-    background-image: url("https://ullizee.files.wordpress.com/2013/01/scrum-org-logo-circles.png");
+    min-height: 320px;
+    max-height: 320px;
+    background-image: url("https://yt3.ggpht.com/a/AGF-l78UCQ9xvX-TJZbmb1kj_k-cxJKl1W3WSQfLiQ=s900-c-k-c0xffffffff-no-rj-mo");
+    filter: grayscale();
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgba(255, 255, 255, 0.9);
     background-blend-mode: lighten;
     border-style: inset;
-    min-height: 300px;
-    margin: 30px;
+    /* margin: 30px; */
     border-radius: 40px;
   }
 
 
- 

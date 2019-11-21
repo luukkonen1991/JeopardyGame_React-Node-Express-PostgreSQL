@@ -24,6 +24,8 @@ router.route('/elaimet')
       res.json(results)
     })
   })
+
+
 // GET ALL HISTORY QUESTIONS
 router.route('/historia')
   .get((req, res, next) => {
