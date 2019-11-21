@@ -16,7 +16,7 @@ function getAllData(callback) {
     (err, data) => {
       if (err) throw err;
       client.release();
-      callback(data.rows);
+      callback(err, data.rows);
     });
   });
 }

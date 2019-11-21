@@ -1,20 +1,21 @@
 var express = require('express');
 var router = express.Router();
 
-var QuestionsService = require('./questionsService');
-
-// /* GET users listing. */
-// router.get('/', function(req, res, next) {
-//   res.send('respond with a resource');
-// });
+var QuestionsService = require('../service/questionsService');
 
 
 router.route('/all')
-.get((req, res, next) => {
-  QuestionsService.getAllData((results) => {
-    res.json(results)
+  .get((req, res, next) => {
+    try {
+      QuestionsService.getAllData((err, results) => {
+        res.json(results)
+      })
+    } catch (err) {
+      res.send('Oh no something went wrong...')
+    }
   })
-})
+
+
 
 // GET ALL ANIMAL QUESTIONS
 router.route('/elaimet')
