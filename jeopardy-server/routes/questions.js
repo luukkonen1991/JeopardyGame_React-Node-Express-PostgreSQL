@@ -20,23 +20,37 @@ router.route('/all')
 // GET ALL ANIMAL QUESTIONS
 router.route('/elaimet')
   .get((req, res, next) => {
-    QuestionsService.getAllAnimalQuestions((results) => {
-      res.json(results)
-    })
+    try {
+      QuestionsService.getAllAnimalQuestions((results) => {
+        res.json(results)
+      })
+    } catch (err) {
+      res.send('Oh no something went wrong...')
+    }
   })
+
+
 // GET ALL HISTORY QUESTIONS
 router.route('/historia')
   .get((req, res, next) => {
-    QuestionsService.getAllHistoryQuestions((results) => {
-      res.json(results)
-    })
+    try {
+      QuestionsService.getAllHistoryQuestions((results) => {
+        res.json(results)
+      })
+    } catch (err) {
+      res.send('Oh no something went wrong...')
+    }
   })
 // GET ALL SCIENCE QUESTIONS
 router.route('/tiede')
   .get((req, res, next) => {
-    QuestionsService.getAllScienceQuestions((results) => {
-      res.json(results)
-    })
+    try {
+      QuestionsService.getAllScienceQuestions((results) => {
+        res.json(results)
+      })
+    } catch (err) {
+      res.send('Oh no something went wrong...')
+    }
   })
 
 

@@ -9,7 +9,6 @@
 .Back {
     
     min-height: 207px;
-     margin: 10px;
      border: 5px solid rgb(112, 7, 116);
      border-style: outset;
 
@@ -19,7 +18,6 @@
 
     border-style: inset;
     min-height: 207px;
-     margin: 10px; 
-     border: 5px solid rgb(132, 0, 255);
+    border: 5px solid rgb(132, 0, 255);
  }
  
