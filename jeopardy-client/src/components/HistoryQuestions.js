@@ -24,7 +24,7 @@ class HistoryQuestions extends Component {
             return <HistoryQuestionItem data = {question}/>
         } )
         return (
-            <div class="MainDiv">
+            <div className="MainDiv">
                  {historyItem}
             </div>
         );

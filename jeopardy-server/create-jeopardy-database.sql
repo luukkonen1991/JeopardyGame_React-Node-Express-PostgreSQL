@@ -59,15 +59,15 @@ INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES (
 
 -- Science table content 
 INSERT INTO category (ctitle, summary) VALUES ('Tiede', 'tiede-kuvuas');
-INSERT INTO question (title, difficulty) VALUES ('Otsikko1Historia', 'normaali');
+INSERT INTO question (title, difficulty) VALUES ('Otsikko1Tiede', 'normaali');
 INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('eka', 'toka', 'kolmas', false, true, false);
 
 INSERT INTO category (ctitle, summary) VALUES ('Tiede', 'tiede-kuvuas');
-INSERT INTO question (title, difficulty) VALUES ('Otsikko2Historia', 'vaikea');
+INSERT INTO question (title, difficulty) VALUES ('Otsikko2Tiede', 'vaikea');
 INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('eka', 'toka', 'kolmas', false, true, false);
 
 INSERT INTO category (ctitle, summary) VALUES ('Tiede', 'tiede-kuvuas');
-INSERT INTO question (title, difficulty) VALUES ('Otsikko3Historia', 'helppo');
+INSERT INTO question (title, difficulty) VALUES ('Otsikko3Tiede', 'helppo');
 INSERT INTO options (title1, title2, title3, result1, result2, result3) VALUES ('eka', 'toka', 'kolmas', false, true, false);
 
 

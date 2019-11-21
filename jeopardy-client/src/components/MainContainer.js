@@ -12,9 +12,9 @@ class MainContainer extends Component {
         return (
             <div>
                 <NavBar />
-                <AnimalQuestions />
-                <HistoryQuestions />
                 <ScienceQuestions />
+                <HistoryQuestions />
+                <AnimalQuestions />
             </div>
         );
     }
