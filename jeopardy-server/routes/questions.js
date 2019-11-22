@@ -11,7 +11,8 @@ router.route('/all')
         res.json(results)
       })
     } catch (err) {
-      res.send('Oh no something went wrong...')
+      res.json(err)
+ 
     }
   })
 

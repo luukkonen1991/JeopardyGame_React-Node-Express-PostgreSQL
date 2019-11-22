@@ -13,7 +13,6 @@ class HistoryQuestions extends Component {
         fetch("api/questions/historia")
         .then(res => res.json())
         .then(res => this.setState({historyQuestions: res}))
-        .then(console.log(this.state.historyQuestions))
         .catch(()=> this.setState({hasErrors: true}));
     }
 
@@ -21,7 +20,7 @@ class HistoryQuestions extends Component {
     render() {
         const historyItem = this.state.historyQuestions
         .map((question) =>{
-            return <HistoryQuestionItem data = {question}/>
+            return <HistoryQuestionItem data = {question} key = {question.id}/>
         } )
         return (
             <div className="MainDiv">

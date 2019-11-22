@@ -14,13 +14,12 @@ class ScienceQuestions extends Component {
         fetch("api/questions/tiede")
         .then(res => res.json())
         .then(res => this.setState({scienceQuestions: res}))
-        .then(console.log(this.state.scienceQuestions))
         .catch(()=> this.setState({hasErrors: true}));
     }
     render() {
         const scienceItem = this.state.scienceQuestions
         .map((question) =>{
-            return <ScienceQuestionItem data = {question}/>
+            return <ScienceQuestionItem data = {question} key={question.id}/>
         } )
         return (
             <div className="MainDiv">

@@ -13,18 +13,17 @@ class AnimalQuestions extends Component {
         fetch("api/questions/elaimet")
         .then(res => res.json())
         .then(res => this.setState({animalQuestions: res}))
-        .then(console.log(this.state.animalQuestions))
         .catch(()=> this.setState({hasErrors: true}));
     }
 
     render() {
         const animalItem = this.state.animalQuestions
         .map((question) =>{
-            return <AnimalQuestionItem data = {question}/>
+            return <AnimalQuestionItem data = {question} key = {question.id}/>
         } )
 
         return (
-            <div class="MainDiv">
+            <div className="MainDiv">
                 {animalItem}
             </div>
         );

@@ -7,7 +7,8 @@ class HistoryQuestionItem extends Component {
         super();
         this.state = {
             isFlipped: false,
-            answer: ''
+            answer: '',
+            color: ''
         };
         this.handleClick = this.handleClick.bind(this);
     }
@@ -18,11 +19,12 @@ class HistoryQuestionItem extends Component {
     }
 
     check(data) {
-        this.setState({ answer: '' })
         if (data === true) {
             this.setState({ answer: 'Correct' })
+            this.setState({color: 'BackCorrect'})
         } else {
-            this.setState({ answer: 'Incorrect' })
+            this.setState({answer: 'Incorrect' })
+            this.setState({color: 'BackWrong'})
         }
     }
 
@@ -42,14 +44,14 @@ class HistoryQuestionItem extends Component {
         }
 
         return (
-            <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal">
+            <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal" key={id}>
                 <div className="Front2" id={id}>
                     <h3>{title}</h3>
                     <p onClick={() => this.check(result1)}>{title1} <button value={result1} onClick={this.handleClick}>Select</button></p>
                     <p onClick={() => this.check(result2)}>{title2} <button value={result2} onClick={this.handleClick}>Select</button></p>
                     <p onClick={() => this.check(result3)}>{title3} <button value={result3} onClick={this.handleClick}>Select</button></p>
                 </div>
-                <div className="Back" id={id}>
+                <div className={this.state.color} id={id}>
                     <p>Your answer was:</p>
                     <h2>{this.state.answer}</h2>
                     <p>The correct answer is:</p>

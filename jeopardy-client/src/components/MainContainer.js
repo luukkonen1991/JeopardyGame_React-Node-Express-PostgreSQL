@@ -22,7 +22,3 @@ class MainContainer extends Component {
 
 export default MainContainer;
 
-/* <div className="animal">
-</div>
-                <div className="history"></div>
-                <div className="science"></div> */
